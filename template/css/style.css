@@ -1,0 +1,71 @@
+.done-true {
+	text-decoration: line-through;
+	color: grey;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: right;
+  font-family: verdana;
+}
+
+#limparConcluidas {
+    color: #FFFFFF;
+    text-decoration: none;
+    float: right;
+    cursor: pointer;
+}
+
+#limparConcluidas::after {
+	clear: right;
+}
+
+#limparConcluidas:hover, #limparConcluidas:focus {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#adicionarTarefa {
+    color: #FFFFFF;
+    text-decoration: none;
+    float: right;
+    cursor: pointer;
+}
+
+#loaderDiv {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1100;
+   background-color: white;
+   opacity: .6;
+}
+
+.ajax-loader {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin-left: -32px;
+   margin-top: -32px;
+   display: block;
+}
+.tela
+{
+ margin-top: 15%;
+ padding-left:25%;
+ padding-right:25%;
+ 	
+	}
+.back{
+    background:url('../imagem/4.png') no-repeat 0px 0px;
+    background-size:cover;
+}
+	
+.cate
+{
+	height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}

@@ -1,0 +1,34 @@
+Instruções para utilizar a interface gráfica.
+
+1) Para realizar a visualização da interface gráfica, devemos primeiramente instalar o XAMPP que pode ser encontrado 
+   no endereço abaixo. 
+
+  https://www.apachefriends.org/pt_br/download.html
+
+  E deve-se escolher de acordo com a versão do Linux no computador a ser executado os códigos.
+
+Logo após de realizado o download, deve-se instalar o arquivo baixado. (Lembre-se de colocar as permissões de administrador, e de executar
+em Propriedades>Permissões>Executar).
+
+Logo após a instalação do programa, deve-se primeiramente rodar o programa com o seguinte comando no terminal.
+
+sudo /opt/lampp/lampp start
+
+e assim, o programa estará executando. 
+
+Para finalizar, deve-se colocar as pastas com as implementações no seguinte caminho:
+
+/opt/lampp/htdocs 
+
+e caso não consiga colocar o programa nessa pasta, possivelmente é algum problema com root então deve-se executar o seguinte comando:
+
+sudo chmod -R 777 /opt/lampp/htdocs
+
+Nesse caminho o restante a se fazer é executar o programa dentro desse caminho e para visualizar ele deve-se digitar no navegador
+
+localhost/"Nome da pasta que contém o programa" 
+
+exemplo: localhost/KMP Final 
+
+e assim é possível usar a interface gráfica. 
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+
+
+<center>
+
+<img src="logotuup.png">
+
+
+<form>  
+<input id="target" type="text" size="50">
+</form>
+<button id="other" size="25">
+  Pesquisar
+</button>
+
+<button id="other" size="25">
+  Estou com sorte
+</button>
+
+<div id="texto">
+
+</div>
+
+</center>
+
+<script type="text/javascript" src="/resources/events.js"></script>
+ 
+<script>
+var xTriggered = 0;
+$( "#target" ).keyup(function( event ) {
+  var query = $("#target").val();
+  $.ajax({
+      url:"bla.php?query="+query,  
+      success:function(data) {
+          msg = data;
+          document.getElementById("texto").innerHTML = msg;
+      }
+   });
+
+
+}).keydown(function( event ) {
+  if ( event.which == 13 ) {
+    event.preventDefault();
+  }
+});
+ 
+$( "#other").click(function() {
+  $( "#target" ).keyup();
+});
+</script>
+ 
+</body>
+</html>
